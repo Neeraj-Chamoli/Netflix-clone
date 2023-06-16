@@ -1,8 +1,11 @@
 {
   "name": "netflix-clone",
+  "homepage": "https://Neeraj-Chamoli.github.io/Netflix-clone",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "next build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -34,6 +37,7 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/lodash": "^4.14.195",
+    "gh-pages": "^5.0.0",
     "prisma": "^4.14.1"
   }
 }
