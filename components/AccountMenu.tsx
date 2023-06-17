@@ -1,4 +1,5 @@
 import useCurrentUser from "@/hooks/useCurrentUser";
+import { signOut } from "next-auth/react";
 import React from "react";
 
 interface AccountMenuProps {
@@ -29,7 +30,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
         </div>
         <hr className="bg-gray-600 border-0 h-px my-4" />
         <div
-          onClick={() => {}}
+          onClick={() => signOut()}
           className="px-3 text-center text-white text-sm hover:underline"
         >
           Sign out of Netflix
